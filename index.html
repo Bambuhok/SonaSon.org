@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>SonaSon.org</title>
+  <!--Стартовые стили шаблона-->
+  <link rel="stylesheet" href="css/starter.css">
+  <!--Ваши стили-->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="math.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!--<div class="leneika"></div>-->
+	<!--НАЧАЛО Шапка-->
+  <header class="mainheader">
+    <div class="container">
+     
+      <img src="img/logo4j.svg" style="height: 55px; width: 60px;">
+      
+      <nav class="mainnav">
+      	<ul>
+      		<li class="active" id="liMenu1"><a href="#Our_specialists">Наши специалисты</a></li>
+      		<li id="liMenu2"><a href="#About_the_company">О компании</a></li>
+      		<li id="liMenu3"><a href="#Recording_a_session">Запись на сеанс</a></li>
+      		<li id="liMenu4"><a href="#Our_developments">Наши разработки</a></li>
+      		<li><img src="img/cart25.png" style="height: 20px; width: 20px;"><a id="countpok"> 0</a></li>
+      	</ul>
+      </nav>
+    </div>
+    <div class="prokrutkacounter"></div>
+  </header>
+	<!--КОНЕЦ Шапка-->
+
+  <main>
+      <a name="Our_specialists"></a>
+    <div class="container">
+     
+      <!--НАЧАЛО Секция "Серии наборов"-->
+      <section>
+        <h2>Наши специалисты</h2>
+          <div class="sim-slider">
+              <ul class="sim-slider-list">
+                  <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" style="height: 480px; width: 800px;" alt="screen"></li> <!-- это экран -->
+                  <li class="sim-slider-element"><img src="img/doctors/Doctor1.bmp" alt="0"></li>
+                  <li class="sim-slider-element"><img src="img/doctors/Doctor2.bmp" alt="1"></li>
+                  <li class="sim-slider-element"><img src="img/doctors/Doctor3.bmp" alt="2"></li>
+                  <li class="sim-slider-element"><img src="img/doctors/Doctor4.bmp" alt="3"></li>
+                  <li class="sim-slider-element"><img src="img/doctors/Doctor5.bmp" alt="4"></li>
+                  <li class="sim-slider-element"><img src="img/doctors/Doctor6.bmp" alt="5"></li>
+              </ul>
+              <div class="sim-slider-arrow-left"></div>
+              <div class="sim-slider-arrow-right"></div>
+              <div class="sim-slider-dots"></div>
+                <a name="About_the_company"></a>
+          </div>
+
+        <!--КОНЕЦ Обертка для слайдов-->
+      </section>
+      <!--КОНЕЦ Секция "Серии наборов"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "О компании"-->
+      <section>
+      	<h2>О компании</h2>
+      	
+      	<p>
+      		<strong>SonaSon</strong> — это Русская частная компания, занимающаяся производством серий Лекарств, представляющих собой Таблетки прописываемые профисиональными Сомнологами. Компания SonaSon состоит из небольшой команды профисиональных врачей и нескольких людей другово рода деятильности.
+      	</p>
+      	<p>
+      		Наша команда была собрана ради процветания индустрии сомнологии и продвежение её вперёд и состоит только из лучших специалистов по сомнологии, среди наших специалистов числяться такие люди, как Владислав Игорьевич, Афанасий Шурупов и другие.
+      	</p>
+      	<p>
+      		Основная наша задача - это создания препаратов, которые смогут помочь больным связанным со сном, а также помочь другим людям своими консультациями, которые кстати можно получить по форме ниже.
+           Пока многие сомнологи и другие люди наживаються на бедных пациентах, <br>
+           мы тратим огромное количество сил и финансов, ради того что бы <br>
+           помочь нашим пациентам и создать стоящие припараты!<br>
+           <br>
+           Если вы желаете обратиться к нашим специалистом за консультацией, оставьте заявку ниже!
+            <a name="Recording_a_session"></a>
+      	</p>
+      </section>
+      <!--КОНЕЦ Секция "О компании"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "Оставить заявку"-->
+      <section>
+      	<h2>Запись на сеанс</h2>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер-->
+      	<div class="order-wrapper">
+      	  <!--НАЧАЛО Левая часть с полями для ввода-->
+      		<div class="order-form">
+      			<!--Имя-->
+      			<label for="firstname_field" style="color: aliceblue">Имя</label>
+      			<input type="text" id="firstname_field"> 
+      			<!--Фамилия-->
+      			<label for="lastname_field"  style="color: aliceblue">Фамилия</label>
+      			<input type="text" id="lastname_field">
+      			<!--Номер телефона-->     	
+      			<label for="phone_field"  style="color: aliceblue">Телефон</label>
+      			<input type="text" id="phone_field">
+      			<button id="btnsend">Отправить</button>
+      		</div>
+      	  <!--КОНЕЦ Левая часть с полями для ввода-->
+      	  
+      	  <!--НАЧАЛО Правая часть с сообщением-->
+      		<div class="order-alert novisible" id="application">
+                <p><strong id="nameP">Уважаемый(ая), Иванов Н.</strong></p>
+                <p>Наши специалисты уже получили Вашу заявку и свяжутся с Вами в ближайшее время по телефону</p>
+                <p><strong id="numberP"><nobr>8 999 123 45 67</nobr></strong><br></p>
+                <p>Спасибо за обращение! </p>
+      		</div>      	  
+      		<!--КОНЕЦ Правая часть с сообщением-->
+      	</div>
+          <a name="Our_developments"></a>
+      	<!--КОНЕЦ Обертка/флекс-контейнер-->
+      </section>
+      <!--КОНЕЦ Секция "Оставить заявку"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "Собери комплект"-->
+      <section>
+      	<h2>Наши разработки</h2>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер для товаров-->
+      	<div class="goods-wrapper">
+      	
+      		<!--НАЧАЛО Товар №1-->
+      		<div class="product">
+      			<img src="img/son/1.jpg">
+      			<h4>МатроСОН</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №1-->
+      		<!--НАЧАЛО Товар №2-->
+      		<div class="product">
+      			<img src="img/son/2.jpg">
+      			<h4>КрепкоПодуСОН</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №2-->
+      		<!--НАЧАЛО Товар №3-->
+      		<div class="product">
+      			<img src="img/son/3.jpg">
+      			<h4>Снотворное</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №3-->
+      		
+      		<!--НАЧАЛО Товар №4-->
+      		<div class="product">
+      			<img src="img/son/4.jpg">
+      			<h4>Снотворное для сна</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №4-->
+      		<!--НАЧАЛО Товар №5-->
+      		<div class="product">
+      			<img src="img/son/5.jpg">
+      			<h4>СоноТРИП</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №5-->
+      		<!--НАЧАЛО Товар №6-->
+      		<div class="product">
+      			<img src="img/son/6.jpg">
+      			<h4>Успокоительное</h4>
+      			<button ><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №6-->
+      	</div>
+      	<!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
+          <div class="hidenbutton">
+          <button id="btnError">Ещё</button>
+            <h5 style="color: aliceblue">*в нашем каталоге более сотни таваров, поищите ещё.</h5>
+            </div>
+      </section>
+      <!--КОНЕЦ Секция "Собери комплект"-->
+      
+    </div>
+    <a class="buttonScrollUp novisible" id="btnScrlUp"  href="#Our_specialists"><img src="https://icon-library.com/images/arrow-icon-png-transparent/arrow-icon-png-transparent-18.jpg" style="height: 50px; width: 50px;"></a>
+  </main>
+    <script>
+        "use strict";
+        //error 404
+        btnError.addEventListener('click', function(){
+            btnError.innerHTML = "Проверьте соединение с интернетом"
+        });
+        
+        
+        
+        //заявка
+        let namePerson = "error";
+        let surnamePerson = "404";
+        let phoneNumberPerson = "not found";
+        btnsend.addEventListener('click', function(){
+            application.classList.remove('novisible');
+            namePerson = firstname_field.value;
+            surnamePerson = lastname_field.value;
+            phoneNumberPerson = phone_field.value;
+            nameP.innerHTML = "Уважаемый(ая), " + namePerson + " " + surnamePerson[0] + ".";
+            numberP.innerHTML = phoneNumberPerson;
+            if(namePerson == "" || surnamePerson == "") {
+                nameP.innerHTML = "Error 404: not found";
+            }
+            if(phoneNumberPerson == "") {
+                numberP.innerHTML = "Error 404: not found";
+            }
+        });
+        
+        
+        
+
+        //скролл
+        let scrollYpage =0;
+        let poloska = document.querySelector(".prokrutkacounter");
+        window.addEventListener('scroll', function() {
+            scrollYpage = window.pageYOffset;
+            scrollYpage = Math.floor(scrollYpage / 21)
+            poloska.style.width = scrollYpage + "%";
+            liMenu1.classList.remove('active');
+            liMenu2.classList.remove('active');
+            liMenu3.classList.remove('active');
+            liMenu4.classList.remove('active');
+            scrollYpage = window.pageYOffset;
+            if(scrollYpage <= 500) {
+                liMenu1.classList.add('active');
+            }
+            if(scrollYpage <= 1100 && scrollYpage > 500) {
+                liMenu2.classList.add('active');
+            }
+            if(scrollYpage <= 1600 && scrollYpage > 1100) {
+                liMenu3.classList.add('active');
+            }
+            if(scrollYpage > 1600) {
+                liMenu4.classList.add('active');
+            }
+            if (scrollYpage >=900){
+                btnScrlUp.classList.remove('novisible')
+            }
+            else{
+                btnScrlUp.classList.add('novisible') 
+            }
+        });
+        
+        
+        
+        
+        
+        //корзина
+        let countshop =0;
+        let elementsbutton = document.querySelectorAll('.product > button');
+        let i =0;
+        elementsbutton[i].addEventListener('click', function(){
+                countshop++;
+                countpok.innerHTML = countshop;
+                
+        });
+        elementsbutton[1].addEventListener('click', function(){
+                countshop++;
+                countpok.innerHTML = countshop;
+                
+        });
+        elementsbutton[2].addEventListener('click', function(){
+                countshop++;
+                countpok.innerHTML = countshop;
+                
+        });
+        elementsbutton[3].addEventListener('click', function(){
+                countshop++;
+                countpok.innerHTML = countshop;
+                
+        });
+        elementsbutton[4].addEventListener('click', function(){
+                countshop++;
+                countpok.innerHTML = countshop;
+                
+        });
+        elementsbutton[5].addEventListener('click', function(){
+                countshop++;
+                countpok.innerHTML = countshop;
+                
+        });
+        
+        
+        
+        
+        
+        
+        //слаидер не трогать
+        function Sim(sldrId) {
+
+        let id = document.getElementById(sldrId);
+	    if(id) {
+            this.sldrRoot = id
+	   }
+	   else {
+		    this.sldrRoot = document.querySelector('.sim-slider')
+	   };
+
+	   // Carousel objects
+	   this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
+	   this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element');
+	   this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element');
+	   this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left');
+	   this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
+	   this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
+
+	   // Initialization
+	   this.options = Sim.defaults;
+	   Sim.initialize(this)
+       };
+
+    Sim.defaults = {
+
+	   // Default options for the carousel
+	   loop: true,     // Бесконечное зацикливание слайдера
+	   auto: false,     // Автоматическое пролистывание
+	   interval: 0, // Интервал между пролистыванием элементов (мс)
+	   arrows: true,   // Пролистывание стрелками
+	   dots: false      // Индикаторные точки
+    };
+
+        Sim.prototype.elemPrev = function(num) {
+	   num = num || 1;
+
+	let prevElement = this.currentElement;
+	this.currentElement -= num;
+	if(this.currentElement < 0) this.currentElement = this.elemCount-1;
+
+	if(!this.options.loop) {
+		if(this.currentElement == 0) {
+			this.leftArrow.style.display = 'none'
+		};
+		this.rightArrow.style.display = 'block'
+	};
+	
+	this.sldrElements[this.currentElement].style.opacity = '1';
+	this.sldrElements[prevElement].style.opacity = '0';
+
+	if(this.options.dots) {
+		this.dotOn(prevElement); this.dotOff(this.currentElement)
+	}
+};
+
+Sim.prototype.elemNext = function(num) {
+	num = num || 1;
+	
+	let prevElement = this.currentElement;
+	this.currentElement += num;
+	if(this.currentElement >= this.elemCount) this.currentElement = 0;
+
+	if(!this.options.loop) {
+		if(this.currentElement == this.elemCount-1) {
+			this.rightArrow.style.display = 'none'
+		};
+		this.leftArrow.style.display = 'block'
+	};
+
+	this.sldrElements[this.currentElement].style.opacity = '1';
+	this.sldrElements[prevElement].style.opacity = '0';
+
+	if(this.options.dots) {
+		this.dotOn(prevElement); this.dotOff(this.currentElement)
+	}
+};
+
+Sim.prototype.dotOn = function(num) {
+	this.indicatorDotsAll[num].style.cssText = 'background-color:#BBB; cursor:pointer;'
+};
+
+Sim.prototype.dotOff = function(num) {
+	this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:default;'
+};
+
+Sim.initialize = function(that) {
+
+	// Constants
+	that.elemCount = that.sldrElements.length; // Количество элементов
+
+	// Variables
+	that.currentElement = 0;
+	let bgTime = getTime();
+
+	// Functions
+	function getTime() {
+		return new Date().getTime();
+	};
+	function setAutoScroll() {
+		that.autoScroll = setInterval(function() {
+			let fnTime = getTime();
+			if(fnTime - bgTime + 10 > that.options.interval) {
+				bgTime = fnTime; that.elemNext()
+			}
+		}, that.options.interval)
+	};
+
+	// Start initialization
+	if(that.elemCount <= 1) {   // Отключить навигацию
+		that.options.auto = false; that.options.arrows = false; that.options.dots = false;
+		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+	};
+	if(that.elemCount >= 1) {   // показать первый элемент
+		that.sldrElemFirst.style.opacity = '1';
+	};
+
+	if(!that.options.loop) {
+		that.leftArrow.style.display = 'none';  // отключить левую стрелку
+		that.options.auto = false; // отключить автопркрутку
+	}
+	else if(that.options.auto) {   // инициализация автопрокруки
+		setAutoScroll();
+		// Остановка прокрутки при наведении мыши на элемент
+		that.sldrList.addEventListener('mouseenter', function() {clearInterval(that.autoScroll)}, false);
+		that.sldrList.addEventListener('mouseleave', setAutoScroll, false)
+	};
+
+	if(that.options.arrows) {  // инициализация стрелок
+		that.leftArrow.addEventListener('click', function() {
+			let fnTime = getTime();
+			if(fnTime - bgTime > 1000) {
+				bgTime = fnTime; that.elemPrev()
+			}
+		}, false);
+		that.rightArrow.addEventListener('click', function() {
+			let fnTime = getTime();
+			if(fnTime - bgTime > 1000) {
+				bgTime = fnTime; that.elemNext()
+			}
+		}, false)
+	}
+	else {
+		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+	};
+
+	if(that.options.dots) {  // инициализация индикаторных точек
+		let sum = '', diffNum;
+		for(let i=0; i<that.elemCount; i++) {
+			sum += '<span class="sim-dot"></span>'
+		};
+		that.indicatorDots.innerHTML = sum;
+		that.indicatorDotsAll = that.sldrRoot.querySelectorAll('span.sim-dot');
+		// Назначаем точкам обработчик события 'click'
+		for(let n=0; n<that.elemCount; n++) {
+			that.indicatorDotsAll[n].addEventListener('click', function() {
+				diffNum = Math.abs(n - that.currentElement);
+				if(n < that.currentElement) {
+					bgTime = getTime(); that.elemPrev(diffNum)
+				}
+				else if(n > that.currentElement) {
+					bgTime = getTime(); that.elemNext(diffNum)
+				}
+				// Если n == that.currentElement ничего не делаем
+			}, false)
+		};
+		that.dotOff(0);  // точка[0] выключена, остальные включены
+		for(let i=1; i<that.elemCount; i++) {
+			that.dotOn(i)
+		}
+	}
+};
+
+new Sim();
+    </script>
+</body>
+</html>
